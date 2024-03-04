@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Young+Serif&display=swap');
+
+:root{
+    --p-clr : hsl(14, 45%, 36%);
+
+    --s-clr : hsl(332, 51%, 32%);
+    --ntrl-clr-1 : hsl(330, 100%, 98%);
+
+    --ntrl-clr-2 : hsl(0, 0%, 100%);
+    --ntrl-clr-3 : hsl(30, 18%, 87%);
+    --ntrl-clr-4 : hsl(30, 10%, 34%);
+    --ntrl-clr-5 : hsl(24, 5%, 18%);  
+
+    --ntrl-clr-6 : hsl(30, 54%, 90%);
+
+}
+
+
+*{
+    padding: 0%;
+    margin : 0%;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-size: 14px;
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--ntrl-clr-3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit';
+}
+
+/*Typography*/
+h1, h2{
+    font-family: 'Young Serif', serif;
+    font-weight: 500;
+}
+
+h1{
+    font-size: 1.6rem;
+    color: black;
+    margin: 0.7em auto;
+}
+
+h2, .table-val, li::marker{
+    color: var(--p-clr);
+    margin: 0.45em 0;
+}
+
+h2{
+    font-size: 1.4rem;
+}
+
+h3{
+    color: var(--s-clr);
+}
+
+p, li, td{
+    font-size: 0.8rem;
+    color: var(--ntrl-clr-5);
+    list-style-position: inside;
+    line-height: 1.5em;
+}
+
+.side-heading{
+    font-weight: 700;
+}
+
+.table-val{
+    font-weight: 700;
+}
+
+/*layout*/
+
+.main-cnt{
+    width: 100%;
+    min-width: 280px;
+    max-width: 500px;
+    background-color: var(--ntrl-clr-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.top-cntr,  img{
+    width: 100%;
+}
+
+.bottom-cntr{
+    width: 100%;
+    padding: 1.5em;
+}
+
+section{
+    margin: 1.2em auto;
+}
+
+table{
+    width: 100%;
+}
+
+hr, td{
+    border: none;
+    padding: 0.5em  ;
+    border-bottom: 0.2px solid rgb(163, 163, 163);
+}
+
+ol li{
+    margin-bottom: 0.7em;
+}
+
+.hr-prep-time-sctn{
+    border-radius: 12px;
+    background-color: var(--ntrl-clr-1);
+    padding:1em;
+}
+
+@media (width >= 375px) {
+    .main-cnt{
+        border-radius: 12px;
+        margin: 2rem auto;
+    }
+    img{
+        border-radius: 12px 12px 0 0;
+    }
+}
