@@ -1,0 +1,139 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    max-width: 375px;
+    background-color: var(--n-w-clr);
+}
+
+.success-main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    max-width: 260px;
+    background-color: var(--n-w-clr);
+    padding: 1rem;
+    gap: 1rem;
+    padding-top: 5rem;
+}
+
+.success-main .btn{
+    margin-top: 11rem;
+}
+
+.img-dsktp{
+    width: 100%;
+    display: none;
+}
+
+.right-container{
+    order: -1;
+    background-image: url('../assets/images/illustration-sign-up-mobile.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.left-container{
+    padding: 1rem;
+    gap: 1rem;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    margin-top: 0.7em;
+}
+
+ul li::before{
+    content: " ";
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    background-image: url('../assets/images/icon-list.svg');
+    background-size: contain;
+    margin-right: 0.5em ;
+}
+
+label{
+    font-size: 0.7rem;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-between;
+}
+
+.invalid-email{
+    display: none;
+    color: rgba(255, 15, 15, 0.774);
+}
+
+.visible{
+    display: inline-block;
+}
+
+input{
+    border-radius: 5px;
+    padding: 0.7em 1rem;
+    border: 0.5px solid var(--n-g-clr);
+    font-size: 0.8rem;
+    outline: none;
+}
+
+form{
+    gap: 0.5em;
+}
+
+.btn{
+    margin-top: 0.5rem;
+}
+
+.svg-success{
+    width: 40px;
+    margin-top: 1rem;
+}
+
+@media (width > 600px) {
+    .main{
+        flex-direction: row;
+        min-height: fit-content;
+        border-radius: 17px;
+        min-width: 550px;
+        padding: .5em;
+    }
+
+    .success-main{
+        min-height: fit-content;
+        border-radius: 17px;
+        min-width: 300px;
+        padding: 2em;
+        gap: 1rem;
+    }
+
+    .success-main .btn{
+        margin-top: 0;
+    }
+
+    .left-container{
+        padding: 2em;
+        width: 60%;
+    }
+
+    .img-dsktp{
+        display: inline-block;
+        height: 100%;
+    }
+
+    .img-mbl{
+        display: none;
+    }
+
+    .right-container{
+        order: 2;
+        width: 40%;
+        background-image: url('../assets/images/illustration-sign-up-desktop.svg');
+    }
+}
